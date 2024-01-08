@@ -1,0 +1,10 @@
+:root {
+    --primary: #086788; /* Blue */
+    --chat-bot: #d4d4d4; /* Light Green */
+    --chat-user: #7EBCE6; /* Light Blue */
+    --highlight: #F25F5C; /* Red */
+    --background: white; /* White */
+    --text-gray: #374151; /* Dark tailwind gray */
+    --text-dark: black;
+    --neutral: #d4d4d4;  /* Tailwind light neutral */
+  }

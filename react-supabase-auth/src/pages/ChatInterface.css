@@ -1,0 +1,126 @@
+/* ChatInterface.css */
+
+.chat-interface {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    margin: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 1;
+    max-height: 90vh;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .chat-interface {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    
+  }
+}
+
+  
+  .message-list {
+    list-style: none;
+    overflow-y: auto;
+    padding: 10px;
+    max-height: 67vh;
+  }
+
+  .message-list li {
+    width: 100%;
+  }
+
+  .message-list-wrapper {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    flex-grow: 1;
+    max-height: 67vh;
+  }
+
+  
+  .input-loader {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    justify-content: center;
+    background-color: var(--neutral);
+  }
+
+  .loader-icon {
+    color: green;
+    background-color: green;
+  }
+
+  .input-form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .input-field {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: var(--neutral);
+    color: var(--text-dark);
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+  }
+
+  @media (max-width: 768px) {
+    .chat-container {
+      height: 90vh;
+  }
+}
+  
+
+  .model-selector-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history-bar {
+    width: 250px; 
+  }
+
+  .current-chat-container {
+    text-align: center; 
+    margin-bottom: 10px; 
+  }
+
+  .auth-wrapper {
+    width: 100vw;
+  }
+  
+  .current-chat-button {
+    width: 100%; 
+    max-width: 400px; 
+  }

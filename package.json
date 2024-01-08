@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "zepto-browserify": "^1.1.6-1"
+  }
+}

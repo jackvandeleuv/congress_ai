@@ -1,0 +1,49 @@
+/* .scrollable-list {
+  height: 360px;
+  width: 250px;
+  overflow-y: auto;
+  margin-right: 10px;
+} */
+
+.scrollable-list {
+  height: 80vh; 
+  width: 20vw; 
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .scrollable-list {
+    display: none;
+  }
+}
+
+/* Style for the scrollbar track */
+.scrollable-list::-webkit-scrollbar-track {
+  background-color: var(--background); /* Light grey track */
+}
+
+/* Style for the scrollbar handle */
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: var(--background); /* Darker grey handle */
+  border-radius: 10px; /* Rounded corners for the handle */
+}
+
+/* Style for the scrollbar itself */
+.scrollable-list::-webkit-scrollbar {
+  width: 4px; /* Narrow width */
+  height: 4px; /* Narrow height for horizontal scrollbars */
+}
+
+.scrollable-list .list-group-item {
+  background-color: var(--background); /* Your desired background color */
+  color: var(--text-gray); /* Your desired text color */
+}
+
+.scrollable-list .list-group-item.active,
+.scrollable-list .list-group-item.active:hover,
+.scrollable-list .list-group-item.active:focus {
+  background-color: var(--primary); /* Active item background color */
+  color: #fff; /* Active item text color */
+  border-color: var(--primary); /* Active item border color */
+}

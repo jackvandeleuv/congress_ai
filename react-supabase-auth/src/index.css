@@ -1,0 +1,110 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+a {
+  font-weight: 500;
+  color: #075985;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #075985;
+}
+
+
+body {
+
+  height: 100vh;
+  /* background-color: #242424; */
+  /* min-width: 320px;
+  min-height: 100vh; */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #075985;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: var(--background);
+  }
+  a:hover {
+    color: var(--primary);
+  }
+  button {
+    background-color: var(--background);
+  }
+}
+
+.custom-navbar {
+  background-color: var(--primary); /* Set the background color to #075985 */
+  margin: 0 auto; /* Center the card horizontally on the screen */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth if desired */
+}
+.custom-register-button {
+  background-color: var(--primary); /* Set the background color to #075985 */
+  color: #fff; /* Set text color to white */
+}
+
+.custom-register-button:hover {
+  background-color: var(--primary); /* Change the background color on hover */
+}
+
+.custom-card {
+  max-width: 50%; /* Adjust the value as needed to control the card width */
+  /* height: 50vh; Set the card's height to 50% of the viewport height */
+  margin: 5% auto 0 auto; /* Center the card horizontally on the screen */
+  padding: 20px; /* Add padding to provide spacing around the card content */
+  border: 1px solid #ccc; /* Add a border to the card if desired */
+  border-radius: 8px; /* Add rounded corners to the card if desired */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth if desired */
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    max-width: 90%; 
+  }
+}
+
+@media (min-width: 1000px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 100%; /* Set to 100% to fit the entire screen */
+  }
+}
+
+
+
